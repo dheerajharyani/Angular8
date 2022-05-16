@@ -1,0 +1,22 @@
+<p>welcome works!</p>
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>CITY</th>
+    </tr>
+    <tr *ngFor="let l of list">
+        <td>{{l.id}}</td>
+        <td>{{l.name}}</td>
+        <td>{{l.City}}</td>
+    </tr>
+ 
+</table>
+<br><br>
+
+    <button type="button" (click)="inValid()">login</button>
+    <br>
+    <p *ngIf="isValid; else elseb">Please Login</p>
+    <ng-template #elseb>Login Successfull</ng-template>

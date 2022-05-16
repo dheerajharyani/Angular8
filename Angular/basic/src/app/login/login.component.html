@@ -1,0 +1,19 @@
+
+<p>login works!</p>
+<h1>Hello World</h1>
+<h1>{{fname}}</h1>
+<h1>{{add}}</h1>
+
+<router-outlet></router-outlet>
+<img [src] = "i">
+<br>
+<br>
+<hr>
+<button (click)="Add()"type="Submit">ADD EVENT</button>
+
+<br> <br>
+    <input type = "text"[(ngModel)]="fname" name ="fname">
+    {{fname}}
+    <input type = "text"[(ngModel)]="lname" name ="lname">
+    {{lname}}
+
